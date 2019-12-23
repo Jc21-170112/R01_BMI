@@ -22,9 +22,9 @@ namespace R01_BMI
             double h = double.Parse(hight.Text);
             double w = double.Parse(wight.Text);
             double hi = h / 100;
-            
-             sum.Text =  (w/ (hi * hi)).ToString();
-            
+
+            sum.Text = Math.Round(w / (hi * hi)).ToString();
+
         }
     }
 }
